@@ -14,10 +14,26 @@
 <h1>dakotadraco84</h1>
 <hr>
 
-<h2>JavaScript</h2>
-<p>Line-breaks in a popup box.</p>
+<h2>JavaScript Prompt</h2>
 
-<button onclick="alert('Hello\nHow are you?')">Try it</button>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
 
 <img src="Android-app-development-1714805921.jpg" alt="android development" width="1280" height="500">
 <img src="th-315539800.jpg" alt="android coding" style="width:550px;height:500px;">
